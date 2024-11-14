@@ -1,0 +1,38 @@
+.profile {
+    width: 300px !important;
+    background: #161c1a;
+    color: #fff;
+    height: calc(100vh - 44px);
+    overflow-y: auto;
+}
+
+.close-profile {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profile h3 {
+    margin: 0px 0px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 10px 0px;
+}
+
+.profile ul {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile .carousel {
+    width: 300px;
+    height: 201px;
+    overflow: hidden;
+}
+
+.profile .entity-info {
+    width: 100%;
+    overflow: auto;
+}

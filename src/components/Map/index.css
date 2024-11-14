@@ -1,0 +1,76 @@
+.leaflet-container {
+    height: calc(100vh - 44px);
+    width: 100%;
+}
+
+.leaflet-shadow-pane, .leaflet-marker-pane,
+.leaflet-control-attribution {
+    display: none;
+}
+
+.search-pane {
+    position: absolute;
+    z-index: 9999;
+    right: 10px;
+    padding: 10px 0px;
+}
+
+.map-layers-menu {
+    position: absolute;
+    z-index: 9999;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 0px 0px;
+}
+
+
+/* .input-group {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #949494;
+    padding: 2px;
+} */
+
+.search-pane .form-control {
+    font-size: 12px;
+    width: 200px;
+    text-align: left;
+    padding: 4px 10px;
+}
+
+.search-pane .input-group-text {
+    font-size: 12px;
+    padding: 0px 10px;
+    color: #fff;
+    background-color: #23c1af;
+}
+
+.map-view {
+    display: flex;
+}
+
+.map-container {
+    position: relative;
+    height: calc(100vh - 44px);
+}
+
+#layerMenu {
+    background: rgba(31, 31, 31, .85); 
+    box-shadow: 0px 0px 5px #000;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+#layerButton button {
+    background: #23c1af;
+    border: 1px solid #23c1af;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#layerButton button:hover {
+    cursor: pointer;
+}
