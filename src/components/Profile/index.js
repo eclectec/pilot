@@ -2,7 +2,7 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {Carousel, Form, InputGroup} from 'react-bootstrap';
 import Axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVolumeHigh, faX } from '@fortawesome/free-solid-svg-icons'
+import { faX } from '@fortawesome/free-solid-svg-icons'
 import { useMapHook } from '../../context/map-provider';
 import './index.css';
 
@@ -18,11 +18,20 @@ export default function Profile() {
             var search = "";
 			if("reg" in entity && entity.reg.length > 0) {
 				search += entity.reg;
-			} 
-			if("type" in entity && entity.type.length > 0)
+			} else if ("r" in entity && entity.r.length > 0) {
+                search += entity.r;
+            }
+
+			if("type" in entity && entity.type.length > 0) {
 				if(search.length > 0)
 					search += "+";
 				search += entity.type;
+            } else if ("t" in entity && entity.t.length > 0) {
+                if(search.length > 0)
+					search += "+";
+				search += entity.t;
+            }
+
             if(search.length > 0) {
                 Axios.get(`http://localhost:8000/images/${search}`).then(res => {
                     console.log(res.data)
@@ -40,7 +49,7 @@ export default function Profile() {
         </div>
         {currentEntity &&
             <div>
-                <h3>{currentEntity.icao}</h3>
+                <h3>{currentEntity.icao.toUpperCase()}</h3>
                 {images && images.length > 0 &&
                 <Carousel
                     autoPlay={true}

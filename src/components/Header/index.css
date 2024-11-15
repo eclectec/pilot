@@ -2,5 +2,7 @@
     background-color: #090f13;
     color: #23c1af;
     text-align: left;
+    text-transform: uppercase;
     padding: 10px;
+    font-weight: bold;
 }

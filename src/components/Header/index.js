@@ -4,7 +4,7 @@ import './index.css';
 export default function Header({uid}) {
     return (
         <div className="header">
-            RUMBLEWARE
+            AUTOPILOT
         </div>
     );
 }

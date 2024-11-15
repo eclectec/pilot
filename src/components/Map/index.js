@@ -31,7 +31,7 @@ export default function Map() {
 
   useEffect(() => {
     console.log("Connecting to websocket");
-    const ws = new WebSocket("ws://localhost:8000/redis/rumble");
+    const ws = new WebSocket("ws://localhost:8000/redis/traffic");
 
     ws.onopen = () => {
       console.log("WebSocket connected");
