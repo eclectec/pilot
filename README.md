@@ -1,29 +1,16 @@
-# Getting Started with Create React App
+## Pilot
+Pilot is a map UI written in React to visualize data output from data containers that simulate streaming.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run, node must be install on your computer
 
-## Available Scripts
-
-In the project directory, you can run:
-
-Prior to running locally, you need to install scripts node needs to be installed
+### Run
 
 ```
 npm install
+npm start
 ```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The default browser will dispaly the application
 
 ### `npm run build`
 
